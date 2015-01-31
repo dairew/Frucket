@@ -8,23 +8,23 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Let's Frucket!</a>
+      <a class="navbar-brand"><%= link_to "Frucket!", root_path %></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to "World Feed", root_path %></li>
+        <li><%= link_to "Home", root_path %></li>
       </ul>
   
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">My Feed</a></li>
-        <li><a href="#">Buckets</a></li>
-        <li><a href="#">Create</a></li>
+        <li><%= link_to "My Feed", myFeed_path %></li>
+        <li><%= link_to "Buckets", buckets_path %></li>
+        <li><%= link_to "Create", create_path %></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Friends</a></li>
+            <li><%= link_to "Friends", friends_path %></li>
             <li><a href="#">Search Deals</a></li>
             <li class="divider"></li>
             <li><a href="#">Share</a></li>
