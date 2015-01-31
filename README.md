@@ -1,6 +1,6 @@
-# One Month Rails
+# Frucket
 
-This is the pinteresting sample application for
-[*One Month Rails*](http://onemonthrails.com)
+This is the Frucket application for
+[*Frucket*](http://frucketapp.com)
 
-by [Frucket](http://frucketapp.com)
+by [David Wang](www.dairew.com)

@@ -3781,3 +3781,235 @@ Processing by PagesController#friends as HTML
   Rendered pages/friends.html.erb within layouts/application (0.0ms)
   Rendered layouts/_header.html.erb (1.0ms)
 Completed 200 OK in 92ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2015-01-31 18:28:50 -0500
+Processing by PagesController#friends as HTML
+  Rendered pages/friends.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 192ms (Views: 180.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-01-31 18:28:51 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-31 18:28:51 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-31 18:28:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-31 18:28:51 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-31 18:28:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-31 18:28:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-31 18:28:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-31 18:28:51 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-31 18:28:51 -0500
+
+
+Started GET "/create" for 127.0.0.1 at 2015-01-31 18:28:52 -0500
+Processing by PagesController#create as HTML
+  Rendered pages/create.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 96ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2015-01-31 18:28:53 -0500
+Processing by PagesController#friends as HTML
+  Rendered pages/friends.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/myFeed" for 127.0.0.1 at 2015-01-31 18:28:55 -0500
+Processing by PagesController#myFeed as HTML
+  Rendered pages/myFeed.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 84ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-31 18:30:54 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-31 18:33:05 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 111ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-01-31 18:33:05 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-31 18:33:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-31 18:33:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-31 18:33:05 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-31 18:33:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-31 18:33:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-31 18:33:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-31 18:33:05 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-31 18:33:05 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-31 18:34:03 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 113.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-01-31 18:34:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-31 18:34:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-31 18:34:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-31 18:34:04 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-31 18:34:04 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-31 18:34:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-31 18:34:04 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-31 18:34:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-31 18:34:04 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-31 18:34:45 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 108ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-31 18:34:45 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-31 18:34:45 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-31 18:34:45 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-01-31 18:34:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-31 18:34:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-31 18:34:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-31 18:34:45 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-31 18:34:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-31 18:34:45 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-31 18:35:18 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 101ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-01-31 18:35:18 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-31 18:35:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-31 18:35:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-31 18:35:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-31 18:35:18 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-31 18:35:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-31 18:35:18 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-31 18:35:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-31 18:35:18 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-31 18:35:30 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 100ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-31 18:35:30 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-01-31 18:35:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-31 18:35:30 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-01-31 18:35:30 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-31 18:35:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-31 18:35:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-31 18:35:30 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-01-31 18:35:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-31 18:35:30 -0500
