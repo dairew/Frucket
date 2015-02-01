@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :installs
+  
   root "pages#home"
   get "about" => "pages#about" # creates about_path
   get "adventureToday" => "pages#adventureToday" # creates adventureToday_path
