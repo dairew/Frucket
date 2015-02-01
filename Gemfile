@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -14,6 +15,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 
 gem 'bootstrap-sass'
+gem 'devise', '~> 3.4.1.rc2'
 
 group :development, :test do
 	gem 'sqlite3'
