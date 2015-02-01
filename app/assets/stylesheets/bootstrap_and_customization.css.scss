@@ -1,4 +1,5 @@
 $body-bg:			#ecf0f1;
+$navbar-height:			45px;
 $navbar-default-bg:			#d35400;
 $navbar-default-link-color:			white;
 $btn-primary-bg:			#d35400;
@@ -6,3 +7,7 @@ $jumbotron-bg:			white;
 
 
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
