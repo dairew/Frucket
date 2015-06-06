@@ -1,5 +1,4 @@
-<nav class="navbar navbar-default">
-<% if user_signed_in? %>
+<nav class="navbar navbar-static-top navbar-default" role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -9,28 +8,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to "Home", root_path, class: "navbar-brand" %>
-    </div>
+      <%= link_to "Frucket", root_path, class: "navbar-brand" %>
+    </div> <!--navbar-header-->
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  
+
+  <% if user_signed_in? %>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "My Feed", myFeed_path %></li>
+        <li><%= link_to "My Feed", myFeed_path %></li> 
         <li><%= link_to "Buckets", buckets_path %></li>
         <li><%= link_to "Create", create_path %></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><%= link_to "Friends", friends_path %></li>
-            <li><a href="#">Search Deals</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Share</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><%= link_to "Account Settings", edit_user_registration_path %></li>
-            <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
-          </ul>
-        </li>
+       <li><%= link_to "Settings", edit_user_registration_path %></li>
+        <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
       </ul>
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 
@@ -38,14 +29,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "About", "#" %></li>
-        <li><%= link_to "Support", "#" %></li>
-        <li><%= link_to "Blog", "#" %></li>
-        <li><%= link_to "Press", "#" %></li>
-        <li><%= link_to "FAQ", "#" %></li>
-        <li><%= link_to "Privacy", "#" %></li>
-        <li><%= link_to "Terms", "#" %></li>
+        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+        <li><%= link_to "Log In", new_user_session_path %></li>
+        <li><%= link_to "About", about_path %></li>
       </ul>
+
     </div><!-- /.navbar-collapse -->
 
 <% end %>

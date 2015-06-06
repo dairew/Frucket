@@ -1,10 +1,57 @@
-<div class="jumbotron center">
-  <h1>Frucket</h1>
-  <% if user_signed_in? %>
-    <p> Welcome to Frucket! </p>
-  <% else %>
-    <p>Use collaborative upvoting to make planning anything a breeze.</p>
-    <p><%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-large" %></p>
-    <p><%= link_to "Log In", new_user_session_path, class: "btn btn-primary btn-large" %></p>
-  <% end %>
+<!--Group Name input field -->
+<div class="row" style="float:left">
+  <div class="col-lg-12">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Group Name">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-12 -->
+</div> <!--row-->
+
+<!--Save Button -->
+<button class="btn btn-default" type="submit" style="float:left">Save</button>
+
+<hr>
+<hr>
+
+<!--Containers for all the Lists -->
+<div class="container" style="width:33%; float:left">
+	<h2>What's going down?</h2>
+		<div class="list-group">
+			<div class="list-group-header">
+				<h3>Upcoming List</h3>
+			</div>
+			  <li class="list-group-item"><span class="badge">20</span>Cras justo odio</li>
+			  <li class="list-group-item"><span class="badge">18</span>Dapibus ac facilisis in</li>
+			  <li class="list-group-item"><span class="badge">17</span>Morbi leo risus</li>
+			  <li class="list-group-item"><span class="badge">15</span>Porta ac consectetur ac</li>
+			  <li class="list-group-item"><span class="badge">14</span>Vestibulum at eros</li>
+		</div>
+</div>
+
+<div class="container" style="width:33%; float:left">
+	<h2>What are you planning?</h2>
+		<div class="list-group">
+			<div class="list-group-header">
+				<h3>Planning List</h3>
+			</div>
+			  <li class="list-group-item"><span class="badge">12</span>Cras justo odio</li>
+			  <li class="list-group-item"><span class="badge">5</span>Dapibus ac facilisis in</li>
+			  <li class="list-group-item"><span class="badge">4</span>Morbi leo risus</li>
+			  <li class="list-group-item"><span class="badge">3</span>Porta ac consectetur ac</li>
+			  <li class="list-group-item"><span class="badge">2</span>Vestibulum at eros</li>
+		</div>
+</div>
+
+<div class="container" style="width:33%; float:left">
+	<h2>What do you want to do?</h2>
+		<div class="list-group">
+			<div class="list-group-header">
+				<h3>Idea List</h3>
+			</div>
+			  <li class="list-group-item"><span class="badge">25</span>Cras justo odio</li>
+			  <li class="list-group-item"><span class="badge">12</span>Dapibus ac facilisis in</li>
+			  <li class="list-group-item"><span class="badge">11</span>Morbi leo risus</li>
+			  <li class="list-group-item"><span class="badge">9</span>Porta ac consectetur ac</li>
+			  <li class="list-group-item"><span class="badge">4</span>Vestibulum at eros</li>
+		</div>
 </div>
