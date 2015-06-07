@@ -12404,3 +12404,912 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-06 18:37:2
 
 
 Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-06 18:37:26 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 14:59:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+Completed 200 OK in 1209ms (Views: 1196.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 14:59:30 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 14:59:30 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 14:59:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 14:59:30 -0400
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-06-07 15:34:49 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (35.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:34:50 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:34:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:34:50 -0400
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-06-07 15:34:51 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WzxOU4X/J3+Js48BLMHDPVWcZiwo6BOydtg0QgYz3SU=", "user"=>{"email"=>"davidw294@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'davidw294@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2015-06-07 19:34:51.328401"], ["last_sign_in_at", "2015-06-06 22:05:56.928767"], ["sign_in_count", 13], ["updated_at", "2015-06-07 19:34:51.330401"]]
+  [1m[36m (24.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 126ms (ActiveRecord: 26.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:34:51 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:34:51 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:34:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:34:51 -0400
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2015-06-07 15:34:52 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:37:37 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 66ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:37:38 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:37:38 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:37:38 -0400
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2015-06-07 15:37:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2015-06-07 15:39:33 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:39:35 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:39:35 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:39:35 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:39:35 -0400
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2015-06-07 15:39:36 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:40:08 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:40:08 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:40:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:40:08 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:40:09 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 41ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:40:09 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 15:40:09 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:40:09 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:40:09 -0400
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2015-06-07 15:40:10 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:50:16 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (17.0ms)
+Completed 200 OK in 127ms (Views: 113.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:17 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:17 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:17 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:50:45 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:45 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:45 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:45 -0400
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2015-06-07 15:50:47 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:50:53 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+Completed 200 OK in 45ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:53 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:53 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:53 -0400
+
+
+Started GET "/about" for 127.0.0.1 at 2015-06-07 15:50:57 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 40ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:57 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:57 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:57 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:50:59 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:59 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:59 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:50:59 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:51:09 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 500 Internal Server Error in 65ms
+
+SyntaxError (c:/Users/DHW/Desktop/pinteresting/app/views/layouts/_header.html.erb:30: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze;       else 
+                    ^
+c:/Users/DHW/Desktop/pinteresting/app/views/layouts/_header.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+c:/Users/DHW/Desktop/pinteresting/app/views/layouts/_header.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/_header.html.erb:30: syntax error, unexpected keyword_else, expecting keyword_end
+  app/views/layouts/_header.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/_header.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__309053622_35370192'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:52:15 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 500 Internal Server Error in 58ms
+
+SyntaxError (c:/Users/DHW/Desktop/pinteresting/app/views/layouts/_header.html.erb:30: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze;       else 
+                    ^
+c:/Users/DHW/Desktop/pinteresting/app/views/layouts/_header.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+c:/Users/DHW/Desktop/pinteresting/app/views/layouts/_header.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/_header.html.erb:30: syntax error, unexpected keyword_else, expecting keyword_end
+  app/views/layouts/_header.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/_header.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__309053622_35370192'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:52:20 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 500 Internal Server Error in 42ms
+
+SyntaxError (c:/Users/DHW/Desktop/pinteresting/app/views/layouts/_header.html.erb:30: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze;       else 
+                    ^
+c:/Users/DHW/Desktop/pinteresting/app/views/layouts/_header.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+c:/Users/DHW/Desktop/pinteresting/app/views/layouts/_header.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/_header.html.erb:30: syntax error, unexpected keyword_else, expecting keyword_end
+  app/views/layouts/_header.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/_header.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__309053622_35370192'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:52:30 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:52:30 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 15:52:30 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:52:30 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:52:30 -0400
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2015-06-07 15:52:32 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.0ms)
+
+
+Started GET "/myFeed" for 127.0.0.1 at 2015-06-07 15:52:34 -0400
+Processing by PagesController#myFeed as HTML
+  Rendered pages/myFeed.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 15:52:34 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:52:34 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:52:34 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:52:34 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 15:59:57 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 15:59:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 15:59:57 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 15:59:57 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 15:59:57 -0400
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2015-06-07 16:00:00 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:00:07 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:00:07 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:00:07 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:00:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:00:07 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:01:27 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (c:/Users/DHW/Desktop/pinteresting/app/views/pages/home.html.erb:14: syntax error, unexpected ')', expecting =>
+... btn-lg", style="float:right" );@output_buffer.safe_append='...
+...                               ^
+c:/Users/DHW/Desktop/pinteresting/app/views/pages/home.html.erb:15: syntax error, unexpected ')', expecting =>
+... btn-lg", style="float:right" );@output_buffer.safe_append='...
+...                               ^
+c:/Users/DHW/Desktop/pinteresting/app/views/pages/home.html.erb:64: syntax error, unexpected keyword_ensure, expecting ')'
+c:/Users/DHW/Desktop/pinteresting/app/views/pages/home.html.erb:66: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/pages/home.html.erb:14: syntax error, unexpected ')', expecting =>
+  app/views/pages/home.html.erb:15: syntax error, unexpected ')', expecting =>
+  app/views/pages/home.html.erb:64: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/pages/home.html.erb:66: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:02:18 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:02:18 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:02:18 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:02:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:02:18 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:02:35 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 41ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:02:35 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:02:35 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:02:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:02:35 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:03:56 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 43ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:03:56 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:03:56 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:03:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:03:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:04:11 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 43ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:04:11 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:04:11 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:04:11 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:04:11 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:04:23 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:04:23 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:04:23 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:04:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:04:23 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:05:38 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:05:38 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:05:38 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:05:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:05:38 -0400
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-06-07 16:12:27 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (39.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 81ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:12:27 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:12:27 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:12:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:12:27 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:16:47 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 41ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:16:47 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:16:47 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:16:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:16:47 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:17:08 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:17:08 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:17:08 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:17:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:17:08 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:17:25 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:17:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:17:25 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:17:25 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:17:25 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:17:45 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 40ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:17:45 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:17:45 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:17:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:17:45 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 16:38:13 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-07 16:38:13 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2015-06-07 16:38:13 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-07 16:38:13 -0400
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2015-06-07 16:38:13 -0400
