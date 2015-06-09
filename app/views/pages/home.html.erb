@@ -10,14 +10,15 @@
 <!--Save Button -->
 <button class="btn btn-default" type="submit" style="float:left">Save</button>
 
+<% if not user_signed_in? %>
 <!-- Sign up & Login buttons -->
 <div style="float:right">
 	<p><%= link_to "Log In", new_user_session_path, class: "btn btn-primary btn-lg" %></li>
-
 </div>
 <div style="float:right">
 	<p><%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default btn-lg"%></li>
 </div>
+<% end %>
 
 <hr>
 <hr>
