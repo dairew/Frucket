@@ -14,21 +14,6 @@ class PagesController < ApplicationController
   def buckets
   end
 
-  def create
-  end
-
-  def friends
-  end
-
-  def searchDeals
-  end
-
-  def share
-  end
-
-  def feedback
-  end
-
   def settings
   end
 end

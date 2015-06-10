@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :pins
+  resources :lists
 
   devise_for :users
   
@@ -8,11 +8,6 @@ Rails.application.routes.draw do
   get "adventureToday" => "pages#adventureToday" # creates adventureToday_path
   get "myFeed" => "pages#myFeed" # creates myfeed_path
   get "buckets" => "pages#buckets" # creates buckets_path
-  get "create" => "pages#create" #creates create_path
-  get "friends" => "pages#friends" #creates friends_path
-  get "searchDeals" => "pages#searchDeals" #creates searchDeals_path
-  get "share" => "pages#share" #creates share_path
-  get "feedback" => "pages#feedback" #creates feedback_path
   get "settings" => "pages#settings" #creates settings_path
 
   # The priority is based upon order of creation: first created -> highest priority.
