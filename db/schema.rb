@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150609053947) do
+ActiveRecord::Schema.define(version: 20150612045442) do
 
   create_table "commontator_comments", force: true do |t|
     t.string   "creator_type"
@@ -85,13 +85,19 @@ ActiveRecord::Schema.define(version: 20150609053947) do
     t.string   "Idea"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
+
+  add_index "lists", ["user_id"], name: "index_lists_on_user_id"
 
   create_table "pins", force: true do |t|
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
+
+  add_index "pins", ["user_id"], name: "index_pins_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
