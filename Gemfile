@@ -33,7 +33,7 @@ gem 'paperclip', '~> 3.5.3'
 
 #jQuery masonry
 gem 'jquery-turbolinks'
-gem 'masonry-rails'
+gem 'masonry-rails', '~>0.2.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

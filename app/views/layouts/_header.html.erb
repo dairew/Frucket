@@ -20,7 +20,11 @@
         <% end %>          
 
         <li><%= link_to "Home", myFeed_path %></li> 
-        <li><%= link_to 'New Pin', new_pin_path %></li>
+        <li>
+            <%= link_to new_pin_path do %>
+              <span class="glyphicon glyphicon-plus"></span> New Pin
+            <% end %>
+        </li>
         <li><%= link_to "Groups", buckets_path %></li>
         <li><%= link_to "Settings", edit_user_registration_path %></li>
 
