@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
   devise_for :user
   
-  root "pages#home"
+  root "pins#index"
+
   get "about" => "pages#about" # creates about_path
   get "adventureToday" => "pages#adventureToday" # creates adventureToday_path
   get "myFeed" => "pages#myFeed" # creates myfeed_path
