@@ -19,6 +19,10 @@ gem 'coffee-script-source', '1.8.0'
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.4.1.rc'
 
+#pagination
+gem 'will_paginate', '~> 3.0.5'
+gem 'will_paginate-bootstrap'
+
 group :development, :test do
 	gem 'sqlite3'
 end
