@@ -10,7 +10,7 @@
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
       <div class="panel-body">
         <%= pin.description %><br/>
-        <strong><%= pin.user.email if pin.user %></strong>
+        <strong><%= pin.user.name if pin.user %></strong>
         <!-- Change ^ to username not user email -->
 
         <% if pin.user == current_user %>
